@@ -1,0 +1,37 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --brand-primary: #B5522B;
+  --brand-secondary: #E0A458;
+  --site-bg: #141A10;
+  --site-surface: #1D2518;
+  --site-border: #333D2A;
+  --site-heading: #F6EFE2;
+  --site-body: #C3C9B4;
+  /* Aliases for the mockup's own variable names (var(--color-bg) etc.). */
+  --color-primary: #B5522B;
+  --color-secondary: #E0A458;
+  --color-bg: #141A10;
+  --color-surface: #1D2518;
+  --color-border: #333D2A;
+  --color-heading: #F6EFE2;
+  --color-body: #C3C9B4;
+}
+
+body {
+  background-color: var(--site-bg);
+  color: var(--site-body);
+}
+
+/* Hero photo focal point, per breakpoint, set by site.js from the client's
+   Branding panel (hero_focal_desktop/mobile). */
+#hero-bg-image {
+  object-position: var(--hero-focal-mobile, center);
+}
+@media (min-width: 768px) {
+  #hero-bg-image {
+    object-position: var(--hero-focal-desktop, center);
+  }
+}
