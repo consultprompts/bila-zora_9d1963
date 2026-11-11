@@ -1,0 +1,364 @@
+<!DOCTYPE html><html lang="en" class="scroll-smooth"><head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Bila Zora · Restaurant in Sveti Nikole</title>
+<meta name="description" content="Bila Zora is a restaurant in Sveti Nikole. Gather friends and family around generous plates, served late in a room that feels like home."/>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin=""/>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<style>
+  :root {
+    --color-primary: #B5522B;
+    --color-secondary: #E0A458;
+    --color-bg: #141A10;
+    --color-surface: #1D2518;
+    --color-border: #333D2A;
+    --color-heading: #F6EFE2;
+    --color-body: #C3C9B4;
+  }
+  body { background: var(--color-bg); color: var(--color-body); font-family: 'Plus Jakarta Sans', system-ui, sans-serif; line-height: 1.7; }
+  .js .reveal { opacity: 0; transform: translateY(18px); transition: opacity .7s ease, transform .7s ease; }
+  .js .reveal.in { opacity: 1; transform: none; }
+  @media (prefers-reduced-motion: reduce) {
+    .js .reveal { opacity: 1; transform: none; transition: none; }
+    html { scroll-behavior: auto; }
+  }
+  #gallery-grid { grid-auto-rows: 150px; grid-auto-flow: dense; }
+  @media (min-width: 768px) { #gallery-grid { grid-auto-rows: 200px; } }
+  #gallery-grid > .gallery-tile:nth-child(6n+1) { grid-column: span 2; grid-row: span 2; }
+  #gallery-grid > .gallery-tile:nth-child(6n+4) { grid-row: span 2; }
+  .gallery-tile img { transition: transform .6s ease; }
+  .gallery-tile:hover img, .gallery-tile:hover svg { transform: scale(1.05); }
+  .gallery-tile svg { transition: transform .6s ease; }
+  .glow { background: radial-gradient(60% 55% at 78% 30%, rgba(181,82,43,.28), transparent 70%), radial-gradient(45% 45% at 15% 85%, rgba(224,164,88,.10), transparent 70%); }
+  .tile-bg { background: linear-gradient(145deg, #1D2518 0%, #26311d 55%, #2d2a1b 100%); }
+</style>
+
+
+
+<meta name="generator" content="consultprompts-static-site v1"/><link rel="stylesheet" href="/assets/css/styles.css"/></head>
+<body class="font-sans bg-[var(--site-bg)] text-[var(--site-body)] antialiased pb-20 md:pb-0">
+
+<!-- NAV -->
+<nav id="site-nav" style="position:fixed;top:0;left:0;right:0;z-index:50;width:100%;background-color:transparent" class="transition-all duration-300">
+  <div class="max-w-6xl mx-auto px-5 md:px-8 h-[72px] flex items-center justify-between">
+    <a href="#" class="flex items-center gap-3">
+      <img id="site-logo" alt="logo.png" class="h-12 w-auto object-contain hidden"/>
+      <span id="logo-fallback-text" class="text-2xl font-bold tracking-tight text-[var(--site-heading)] hidden">Bila Zora</span>
+    </a>
+    <div class="hidden md:flex items-center gap-8 text-sm font-medium">
+      <a href="#menu-section" class="text-[var(--site-heading)] hover:text-[var(--brand-secondary)] transition-colors duration-300">Menu</a>
+      <a href="#gallery-section" class="text-[var(--site-heading)] hover:text-[var(--brand-secondary)] transition-colors duration-300">Gallery</a>
+      <a href="#reviews-section" class="text-[var(--site-heading)] hover:text-[var(--brand-secondary)] transition-colors duration-300">Reviews</a>
+      <a href="#about-section" class="text-[var(--site-heading)] hover:text-[var(--brand-secondary)] transition-colors duration-300">About</a>
+      <a href="#location-section" class="text-[var(--site-heading)] hover:text-[var(--brand-secondary)] transition-colors duration-300">Location</a>
+      <a href="#menu-section" class="bg-[var(--brand-primary)] text-white px-5 py-2.5 rounded-2xl font-semibold hover:opacity-90 transition-all duration-300">See Menu</a>
+    </div>
+    <button id="nav-toggle" type="button" aria-label="Open menu" aria-expanded="false" class="md:hidden text-[var(--site-heading)] p-2">
+      <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"></path></svg>
+    </button>
+  </div>
+  <div id="mobile-menu" class="hidden md:hidden bg-[var(--site-surface)] border-t border-[var(--site-border)] px-5 py-4">
+    <div class="flex flex-col gap-1 text-base font-medium">
+      <a href="#menu-section" class="mobile-link text-[var(--site-heading)] py-2.5">Menu</a>
+      <a href="#gallery-section" class="mobile-link text-[var(--site-heading)] py-2.5">Gallery</a>
+      <a href="#reviews-section" class="mobile-link text-[var(--site-heading)] py-2.5">Reviews</a>
+      <a href="#about-section" class="mobile-link text-[var(--site-heading)] py-2.5">About</a>
+      <a href="#location-section" class="mobile-link text-[var(--site-heading)] py-2.5">Location</a>
+    </div>
+  </div>
+</nav>
+
+<!-- HERO -->
+<header class="relative overflow-hidden glow" style="padding-top:72px">
+  <img id="hero-bg-image" alt="" style="display:none" class="absolute inset-0 w-full h-full object-cover" data-cp-on-error="1"/>
+  <div id="hero-bg-overlay" style="display:none;background-color:color-mix(in srgb, #141A10 85%, transparent)" class="absolute inset-0"></div>
+  <div class="relative z-10">
+    <div class="max-w-6xl mx-auto px-5 md:px-8 py-20 md:py-32 min-h-[78vh] flex items-center">
+      <div class="max-w-2xl md:ml-[6%] reveal">
+        <div class="flex items-center gap-3 mb-6">
+          <span class="block w-6 h-px bg-[var(--brand-secondary)]"></span>
+          <span class="text-[11px] md:text-xs uppercase tracking-[0.22em] font-semibold text-[var(--brand-secondary)]">Restaurant · Sveti Nikole</span>
+        </div>
+        <h1 class="text-4xl md:text-5xl font-semibold tracking-tight leading-[1.12] text-[var(--site-heading)]">Dinner After Dark, <span class="text-[var(--brand-primary)]">Glowing With Warmth</span> And Flavor</h1>
+        <p class="mt-6 text-base md:text-lg text-[var(--site-body)] max-w-xl">Gather friends and family around generous plates, served late in a room that feels like home.</p>
+        <div class="mt-6 w-16 h-px bg-[var(--site-border)]"></div>
+        <div class="mt-8 flex flex-wrap gap-3">
+          <a href="#menu-section" class="bg-[var(--brand-primary)] text-white px-6 py-3 rounded-2xl font-semibold hover:opacity-90 transition-all duration-300">See Menu</a>
+          <a href="#location-section" class="border border-[var(--site-border)] text-[var(--site-heading)] px-6 py-3 rounded-2xl font-semibold hover:border-[var(--brand-secondary)] hover:text-[var(--brand-secondary)] transition-all duration-300">Reserve Evening</a>
+        </div>
+        <div class="mt-8 inline-flex items-center gap-2.5 border border-[var(--site-border)] bg-[var(--site-surface)] rounded-full px-4 py-2 text-sm text-[var(--site-heading)]">
+          <span class="w-2 h-2 rounded-full bg-[var(--brand-secondary)]"></span>
+          Open Today · 8AM – 12AM
+        </div>
+        <div class="mt-6 flex items-center gap-4 text-[var(--site-body)]">
+          <a id="social-hero-1" href="#" target="_blank" rel="noopener noreferrer" style="display:none"></a>
+          <a id="social-hero-2" href="#" target="_blank" rel="noopener noreferrer" style="display:none"></a>
+          <a id="social-hero-3" href="#" target="_blank" rel="noopener noreferrer" style="display:none"></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- MENU -->
+<section id="menu-section" style="display:none" class="py-14 md:py-20 border-t border-[var(--site-border)]">
+  <div class="max-w-6xl mx-auto px-5 md:px-8">
+    <div class="max-w-xl mb-10 reveal">
+      <div class="flex items-center gap-3 mb-4">
+        <span class="block w-6 h-px bg-[var(--brand-secondary)]"></span>
+        <span class="text-[11px] uppercase tracking-[0.22em] font-semibold text-[var(--brand-secondary)]">The Menu</span>
+      </div>
+      <h2 class="text-3xl md:text-4xl font-semibold tracking-tight text-[var(--site-heading)]">Plates made for sharing</h2>
+      <p class="mt-4 text-[var(--site-body)]">Fresh dishes for lunch, dinner and everything in between, served from morning until midnight.</p>
+    </div>
+    <div id="menu-categories" class="grid md:grid-cols-2 gap-6 reveal">
+      <div class="menu-cat rounded-2xl bg-[var(--site-surface)] border border-[var(--site-border)] p-6 md:p-8">
+        <h3 class="text-xl font-semibold text-[var(--site-heading)] mb-2">Starters</h3>
+        <div data-role="menu-category-items">
+          <div class="menu-item flex items-start gap-4 py-4 border-b border-[var(--site-border)]">
+            <div data-field="image-wrap" style="display:none" class="shrink-0"><img data-field="image" alt="" class="w-14 h-14 object-cover rounded-xl"/></div>
+            <div class="flex-1"><span data-field="title" class="block font-semibold text-[var(--site-heading)]">Starter name</span><span data-field="description" class="block text-sm text-[var(--site-body)]">A short description of the dish appears here.</span></div>
+            <span data-field="price" class="font-semibold text-[var(--brand-secondary)]">—</span>
+          </div>
+          <div class="menu-item flex items-start gap-4 py-4 border-b border-[var(--site-border)]">
+            <div data-field="image-wrap" style="display:none" class="shrink-0"><img data-field="image" alt="" class="w-14 h-14 object-cover rounded-xl"/></div>
+            <div class="flex-1"><span data-field="title" class="block font-semibold text-[var(--site-heading)]">Starter name</span><span data-field="description" class="block text-sm text-[var(--site-body)]">A short description of the dish appears here.</span></div>
+            <span data-field="price" class="font-semibold text-[var(--brand-secondary)]">—</span>
+          </div>
+        </div>
+      </div>
+      <div class="menu-cat rounded-2xl bg-[var(--site-surface)] border border-[var(--site-border)] p-6 md:p-8">
+        <h3 class="text-xl font-semibold text-[var(--site-heading)] mb-2">Mains</h3>
+        <div data-role="menu-category-items">
+          <div class="menu-item flex items-start gap-4 py-4 border-b border-[var(--site-border)]">
+            <div data-field="image-wrap" style="display:none" class="shrink-0"><img data-field="image" alt="" class="w-14 h-14 object-cover rounded-xl"/></div>
+            <div class="flex-1"><span data-field="title" class="block font-semibold text-[var(--site-heading)]">Main course name</span><span data-field="description" class="block text-sm text-[var(--site-body)]">A short description of the dish appears here.</span></div>
+            <span data-field="price" class="font-semibold text-[var(--brand-secondary)]">—</span>
+          </div>
+          <div class="menu-item flex items-start gap-4 py-4 border-b border-[var(--site-border)]">
+            <div data-field="image-wrap" style="display:none" class="shrink-0"><img data-field="image" alt="" class="w-14 h-14 object-cover rounded-xl"/></div>
+            <div class="flex-1"><span data-field="title" class="block font-semibold text-[var(--site-heading)]">Main course name</span><span data-field="description" class="block text-sm text-[var(--site-body)]">A short description of the dish appears here.</span></div>
+            <span data-field="price" class="font-semibold text-[var(--brand-secondary)]">—</span>
+          </div>
+        </div>
+      </div>
+      <div class="menu-cat rounded-2xl bg-[var(--site-surface)] border border-[var(--site-border)] p-6 md:p-8">
+        <h3 class="text-xl font-semibold text-[var(--site-heading)] mb-2">Desserts</h3>
+        <div data-role="menu-category-items">
+          <div class="menu-item flex items-start gap-4 py-4 border-b border-[var(--site-border)]">
+            <div data-field="image-wrap" style="display:none" class="shrink-0"><img data-field="image" alt="" class="w-14 h-14 object-cover rounded-xl"/></div>
+            <div class="flex-1"><span data-field="title" class="block font-semibold text-[var(--site-heading)]">Dessert name</span><span data-field="description" class="block text-sm text-[var(--site-body)]">A short description of the dish appears here.</span></div>
+            <span data-field="price" class="font-semibold text-[var(--brand-secondary)]">—</span>
+          </div>
+        </div>
+      </div>
+      <div id="menu-category-template" style="display:none" class="menu-cat rounded-2xl bg-[var(--site-surface)] border border-[var(--site-border)] p-6 md:p-8">
+        <h3 data-field="category-name" class="text-xl font-semibold text-[var(--site-heading)] mb-2">Category Name</h3>
+        <div data-role="menu-category-items">
+          <div data-role="menu-item-template" style="display:none" class="menu-item flex items-start gap-4 py-4 border-b border-[var(--site-border)]">
+            <div data-field="image-wrap" style="display:none" class="shrink-0"><img data-field="image" alt="" class="w-14 h-14 object-cover rounded-xl"/></div>
+            <div class="flex-1"><span data-field="title" class="block font-semibold text-[var(--site-heading)]">Item Name</span><span data-field="description" class="block text-sm text-[var(--site-body)]">Description.</span></div>
+            <span data-field="price" class="font-semibold text-[var(--brand-secondary)]">$10</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- GALLERY -->
+<section id="gallery-section" style="display:none" class="py-14 md:py-20 border-t border-[var(--site-border)]">
+  <div class="max-w-6xl mx-auto px-5 md:px-8">
+    <div class="flex flex-wrap items-end justify-between gap-4 mb-10 reveal">
+      <div>
+        <div class="flex items-center gap-3 mb-4">
+          <span class="block w-6 h-px bg-[var(--brand-secondary)]"></span>
+          <span class="text-[11px] uppercase tracking-[0.22em] font-semibold text-[var(--brand-secondary)]">Gallery</span>
+        </div>
+        <h2 class="text-3xl md:text-4xl font-semibold tracking-tight text-[var(--site-heading)]">A taste of the table</h2>
+      </div>
+      <p class="max-w-sm text-[var(--site-body)]">Dishes, details and the room where evenings unfold.</p>
+    </div>
+    <div id="gallery-grid" class="grid grid-cols-2 md:grid-cols-4 gap-3 md:gap-4 reveal">
+      <div class="gallery-tile relative overflow-hidden rounded-2xl tile-bg border border-[var(--site-border)] flex items-center justify-center text-[var(--site-border)]"><svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="3"></rect><circle cx="12" cy="12" r="3.5"></circle><path d="M8 5l1.5-2h5L16 5"></path></svg></div>
+      <div class="gallery-tile relative overflow-hidden rounded-2xl tile-bg border border-[var(--site-border)] flex items-center justify-center text-[var(--site-border)]"><svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="3"></rect><circle cx="12" cy="12" r="3.5"></circle><path d="M8 5l1.5-2h5L16 5"></path></svg></div>
+      <div class="gallery-tile relative overflow-hidden rounded-2xl tile-bg border border-[var(--site-border)] flex items-center justify-center text-[var(--site-border)]"><svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="3"></rect><circle cx="12" cy="12" r="3.5"></circle><path d="M8 5l1.5-2h5L16 5"></path></svg></div>
+      <div class="gallery-tile relative overflow-hidden rounded-2xl tile-bg border border-[var(--site-border)] flex items-center justify-center text-[var(--site-border)]"><svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="3"></rect><circle cx="12" cy="12" r="3.5"></circle><path d="M8 5l1.5-2h5L16 5"></path></svg></div>
+      <div class="gallery-tile relative overflow-hidden rounded-2xl tile-bg border border-[var(--site-border)] flex items-center justify-center text-[var(--site-border)]"><svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="3"></rect><circle cx="12" cy="12" r="3.5"></circle><path d="M8 5l1.5-2h5L16 5"></path></svg></div>
+      <div class="gallery-tile relative overflow-hidden rounded-2xl tile-bg border border-[var(--site-border)] flex items-center justify-center text-[var(--site-border)]"><svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="3"></rect><circle cx="12" cy="12" r="3.5"></circle><path d="M8 5l1.5-2h5L16 5"></path></svg></div>
+      <div id="gallery-item-template" style="display:none" class="gallery-tile relative overflow-hidden rounded-2xl tile-bg border border-[var(--site-border)] flex items-center justify-center text-[var(--site-border)]">
+        <img data-field="image" alt="" class="absolute inset-0 w-full h-full object-cover"/>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- STATS / TRUST STRIP -->
+<section class="py-14 md:py-16 border-t border-[var(--site-border)] bg-[var(--site-surface)]">
+  <div class="max-w-6xl mx-auto px-5 md:px-8 grid grid-cols-1 sm:grid-cols-3 gap-8 sm:gap-0 sm:divide-x divide-[var(--site-border)] text-center reveal">
+    <div class="px-6"><div class="text-4xl font-semibold tracking-tight text-[var(--site-heading)]">4.4<span class="text-[var(--brand-secondary)]">★</span></div><div class="mt-1 text-sm uppercase tracking-[0.16em] text-[var(--site-body)]">Google Rating</div></div>
+    <div class="px-6"><div class="text-4xl font-semibold tracking-tight text-[var(--site-heading)]">12AM</div><div class="mt-1 text-sm uppercase tracking-[0.16em] text-[var(--site-body)]">Kitchen Open Late</div></div>
+    <div class="px-6"><div class="text-4xl font-semibold tracking-tight text-[var(--site-heading)]">Daily</div><div class="mt-1 text-sm uppercase tracking-[0.16em] text-[var(--site-body)]">Dinner Service</div></div>
+  </div>
+</section>
+
+<!-- REVIEWS -->
+<section id="reviews-section" style="display:none" class="py-14 md:py-20 border-t border-[var(--site-border)]">
+  <div class="max-w-6xl mx-auto px-5 md:px-8 grid lg:grid-cols-[minmax(0,1fr)_minmax(0,2fr)] gap-10 lg:gap-14 items-start">
+    <div class="reveal">
+      <div class="flex items-center gap-3 mb-4">
+        <span class="block w-6 h-px bg-[var(--brand-secondary)]"></span>
+        <span class="text-[11px] uppercase tracking-[0.22em] font-semibold text-[var(--brand-secondary)]">Reviews</span>
+      </div>
+      <h2 class="text-3xl md:text-4xl font-semibold tracking-tight text-[var(--site-heading)]">Rated 4.4 on Google</h2>
+      <p class="mt-4 text-[var(--site-body)]">Guests keep coming back for the food, the warmth and the late hours. Here is what they say.</p>
+    </div>
+    <div id="reviews-grid" class="grid sm:grid-cols-2 gap-5 reveal">
+      <div class="review-card rounded-2xl bg-[var(--site-surface)] border border-[var(--site-border)] p-6">
+        <p data-field="rating" class="text-sm tracking-widest text-[var(--brand-secondary)]">★★★★★</p>
+        <p data-field="text" class="mt-3 text-[var(--site-heading)] leading-relaxed">Guest reviews from Google will appear here.</p>
+        <p data-field="author" class="mt-4 text-xs uppercase tracking-[0.16em] text-[var(--site-body)]">Google reviewer</p>
+      </div>
+      <div class="review-card rounded-2xl bg-[var(--site-surface)] border border-[var(--site-border)] p-6">
+        <p data-field="rating" class="text-sm tracking-widest text-[var(--brand-secondary)]">★★★★★</p>
+        <p data-field="text" class="mt-3 text-[var(--site-heading)] leading-relaxed">Guest reviews from Google will appear here.</p>
+        <p data-field="author" class="mt-4 text-xs uppercase tracking-[0.16em] text-[var(--site-body)]">Google reviewer</p>
+      </div>
+      <div id="review-card-template" style="display:none" class="review-card rounded-2xl bg-[var(--site-surface)] border border-[var(--site-border)] p-6">
+        <p data-field="rating">★★★★★</p>
+        <p data-field="text">Review text here.</p>
+        <p data-field="author">Author Name</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about-section" class="py-14 md:py-20 border-t border-[var(--site-border)]">
+  <div class="max-w-6xl mx-auto px-5 md:px-8 grid md:grid-cols-2 gap-10 md:gap-16 items-center">
+    <div class="relative aspect-[4/5] rounded-2xl overflow-hidden tile-bg border border-[var(--site-border)] flex items-center justify-center reveal">
+      <div class="text-center px-6">
+        <div class="text-6xl md:text-7xl font-semibold tracking-tight text-[var(--brand-primary)] opacity-90">BZ</div>
+        <div class="mt-3 text-[11px] uppercase tracking-[0.3em] text-[var(--brand-secondary)]">Bila Zora</div>
+      </div>
+      <div id="about-image-wrap" style="display:none" class="absolute inset-0">
+        <img id="about-image" alt="" style="display:none" class="w-full h-full object-cover"/>
+      </div>
+    </div>
+    <div class="reveal">
+      <div class="flex items-center gap-3 mb-4">
+        <span class="block w-6 h-px bg-[var(--brand-secondary)]"></span>
+        <span class="text-[11px] uppercase tracking-[0.22em] font-semibold text-[var(--brand-secondary)]">About</span>
+      </div>
+      <h2 id="about-title" class="text-3xl md:text-4xl font-semibold tracking-tight text-[var(--site-heading)]">Our Story</h2>
+      <p id="about-description" class="mt-5 text-base md:text-lg text-[var(--site-body)]">Bila Zora is a restaurant on ул. Маршал Тито in Sveti Nikole, made for date nights, friends&#39; dinners and family celebrations. Come for generous plates, stay for the warmth of the room.</p>
+      <ul class="mt-6 space-y-3 text-[var(--site-body)]">
+        <li id="about-bullet-1" style="display:none" class="flex gap-3"><span class="text-[var(--brand-secondary)]">—</span><span></span></li>
+        <li id="about-bullet-2" style="display:none" class="flex gap-3"><span class="text-[var(--brand-secondary)]">—</span><span></span></li>
+        <li id="about-bullet-3" style="display:none" class="flex gap-3"><span class="text-[var(--brand-secondary)]">—</span><span></span></li>
+        <li id="about-bullet-4" style="display:none" class="flex gap-3"><span class="text-[var(--brand-secondary)]">—</span><span></span></li>
+        <li id="about-bullet-5" style="display:none" class="flex gap-3"><span class="text-[var(--brand-secondary)]">—</span><span></span></li>
+        <li id="about-bullet-6" style="display:none" class="flex gap-3"><span class="text-[var(--brand-secondary)]">—</span><span></span></li>
+      </ul>
+      <div class="mt-6 flex items-center gap-4 text-[var(--site-body)]">
+        <a id="social-about-1" href="#" target="_blank" rel="noopener noreferrer" style="display:none"></a>
+        <a id="social-about-2" href="#" target="_blank" rel="noopener noreferrer" style="display:none"></a>
+        <a id="social-about-3" href="#" target="_blank" rel="noopener noreferrer" style="display:none"></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- LOCATION &amp; HOURS -->
+<section id="location-section" class="py-14 md:py-20 border-t border-[var(--site-border)] bg-[var(--site-surface)]">
+  <div class="max-w-6xl mx-auto px-5 md:px-8">
+    <div class="mb-10 reveal">
+      <div class="flex items-center gap-3 mb-4">
+        <span class="block w-6 h-px bg-[var(--brand-secondary)]"></span>
+        <span class="text-[11px] uppercase tracking-[0.22em] font-semibold text-[var(--brand-secondary)]">Visit</span>
+      </div>
+      <h2 class="text-3xl md:text-4xl font-semibold tracking-tight text-[var(--site-heading)]">Find your seat</h2>
+    </div>
+    <div class="grid md:grid-cols-2 gap-8 md:gap-12 reveal">
+      <div class="relative min-h-[300px] md:min-h-[380px] rounded-2xl overflow-hidden tile-bg border border-[var(--site-border)]">
+        <div id="location-map-placeholder" class="absolute inset-0 flex flex-col items-center justify-center text-center px-6 text-[var(--site-body)]">
+          <svg width="44" height="44" viewBox="0 0 24 24" fill="none" stroke="var(--color-secondary)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s7-6.2 7-11.5A7 7 0 0 0 5 9.5C5 14.8 12 21 12 21z"></path><circle cx="12" cy="9.5" r="2.5"></circle></svg>
+          <p class="mt-3 text-[var(--site-heading)] font-semibold">Sveti Nikole</p>
+          <p class="text-sm">Map loads here</p>
+        </div>
+        <iframe id="location-map-embed" style="display:none" class="absolute inset-0 w-full h-full border-0" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Map"></iframe>
+      </div>
+      <div>
+        <div class="space-y-3 text-base">
+          <p><span class="block text-[11px] uppercase tracking-[0.18em] text-[var(--brand-secondary)]">Address</span><a id="location-address" href="#" class="text-[var(--site-heading)] hover:text-[var(--brand-secondary)] transition-colors duration-300">ул. Маршал Тито бр.100, Ж 2220, Sveti Nikole, North Macedonia</a></p>
+          <p><span class="block text-[11px] uppercase tracking-[0.18em] text-[var(--brand-secondary)]">Phone</span><a id="location-phone" href="#" class="text-[var(--site-heading)] hover:text-[var(--brand-secondary)] transition-colors duration-300">Phone number coming soon</a></p>
+          <p><span class="block text-[11px] uppercase tracking-[0.18em] text-[var(--brand-secondary)]">Email</span><a id="location-email" href="#" class="text-[var(--site-heading)] hover:text-[var(--brand-secondary)] transition-colors duration-300">Email coming soon</a></p>
+        </div>
+        <a id="location-directions-btn" href="#" target="_blank" rel="noopener noreferrer" style="display:none" class="inline-block mt-5 bg-[var(--brand-primary)] text-white px-6 py-3 rounded-2xl font-semibold hover:opacity-90 transition-all duration-300">Get Directions</a>
+        <div class="mt-8">
+          <span class="block text-[11px] uppercase tracking-[0.18em] text-[var(--brand-secondary)] mb-2">Hours</span>
+          <div class="text-[var(--site-heading)]">
+            <div id="location-hours-monday" class="flex justify-between py-2.5 border-b border-[var(--site-border)]"><span>Monday</span><span id="location-hours-monday-value">8AM – 12AM</span></div>
+            <div id="location-hours-tuesday" class="flex justify-between py-2.5 border-b border-[var(--site-border)]"><span>Tuesday</span><span id="location-hours-tuesday-value">8AM – 12AM</span></div>
+            <div id="location-hours-wednesday" class="flex justify-between py-2.5 border-b border-[var(--site-border)]"><span>Wednesday</span><span id="location-hours-wednesday-value">8AM – 12AM</span></div>
+            <div id="location-hours-thursday" class="flex justify-between py-2.5 border-b border-[var(--site-border)]"><span>Thursday</span><span id="location-hours-thursday-value">8AM – 12AM</span></div>
+            <div id="location-hours-friday" class="flex justify-between py-2.5 border-b border-[var(--site-border)]"><span>Friday</span><span id="location-hours-friday-value">8AM – 12AM</span></div>
+            <div id="location-hours-saturday" class="flex justify-between py-2.5 border-b border-[var(--site-border)]"><span>Saturday</span><span id="location-hours-saturday-value">8AM – 12AM</span></div>
+            <div id="location-hours-sunday" class="flex justify-between py-2.5 border-b border-[var(--site-border)]"><span>Sunday</span><span id="location-hours-sunday-value">8AM – 12AM</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA BANNER -->
+<section class="py-14 md:py-20 border-t border-[var(--site-border)]">
+  <div class="max-w-4xl mx-auto px-5 md:px-8 text-center reveal">
+    <h2 class="text-3xl md:text-4xl font-semibold tracking-tight text-[var(--site-heading)]">Your table is <span class="text-[var(--brand-primary)]">waiting</span></h2>
+    <p class="mt-4 text-[var(--site-body)] max-w-xl mx-auto">Browse the menu, then come hungry. We&#39;re open every day, 8AM – 12AM.</p>
+    <div class="mt-8 flex flex-wrap justify-center gap-3">
+      <a href="#menu-section" class="bg-[var(--brand-primary)] text-white px-6 py-3 rounded-2xl font-semibold hover:opacity-90 transition-all duration-300">See Menu</a>
+      <a href="#location-section" class="border border-[var(--site-border)] text-[var(--site-heading)] px-6 py-3 rounded-2xl font-semibold hover:border-[var(--brand-secondary)] hover:text-[var(--brand-secondary)] transition-all duration-300">Reserve Evening</a>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="border-t border-[var(--site-border)] py-12">
+  <div class="max-w-6xl mx-auto px-5 md:px-8 grid md:grid-cols-3 gap-8 text-sm">
+    <div>
+      <div class="text-xl font-bold tracking-tight text-[var(--site-heading)]">Bila Zora</div>
+      <p class="mt-2 text-[var(--site-body)]">Restaurant · Sveti Nikole</p>
+      <div class="mt-4 flex items-center gap-4 text-[var(--site-body)]">
+        <a id="social-footer-1" href="#" target="_blank" rel="noopener noreferrer" style="display:none"></a>
+        <a id="social-footer-2" href="#" target="_blank" rel="noopener noreferrer" style="display:none"></a>
+        <a id="social-footer-3" href="#" target="_blank" rel="noopener noreferrer" style="display:none"></a>
+      </div>
+    </div>
+    <div>
+      <div class="text-[11px] uppercase tracking-[0.18em] text-[var(--brand-secondary)] mb-2">Address</div>
+      <p class="text-[var(--site-body)]">ул. Маршал Тито бр.100, Ж 2220<br/>Sveti Nikole, North Macedonia</p>
+    </div>
+    <div>
+      <div class="text-[11px] uppercase tracking-[0.18em] text-[var(--brand-secondary)] mb-2">Hours</div>
+      <p class="text-[var(--site-body)]">Mon - Sun : 8AM - 12AM</p>
+      <a href="#menu-section" class="inline-block mt-4 bg-[var(--brand-primary)] text-white px-5 py-2.5 rounded-2xl font-semibold hover:opacity-90 transition-all duration-300">See Menu</a>
+    </div>
+  </div>
+  <div class="max-w-6xl mx-auto px-5 md:px-8 mt-10 pt-6 border-t border-[var(--site-border)] flex flex-wrap justify-between gap-3 text-xs text-[var(--site-body)]">
+    <span>© Bila Zora</span>
+    <a href="https://consultprompts.com" target="_blank" rel="noopener noreferrer" style="font-size:11px;opacity:0.4">Powered by ConsultPrompts</a>
+  </div>
+</footer>
+
+<!-- MOBILE STICKY CTA -->
+<div class="md:hidden fixed bottom-0 left-0 right-0 z-40 p-3 bg-[var(--site-bg)] border-t border-[var(--site-border)]">
+  <a href="#menu-section" class="block text-center bg-[var(--brand-primary)] text-white px-6 py-3 rounded-2xl font-semibold">See Menu</a>
+</div>
+
+
+
+
+<script src="/assets/js/site.js" defer=""></script><script src="/assets/js/page-1.js" defer=""></script><script src="/assets/js/page-2.js" defer=""></script><script src="/assets/js/page-3.js" defer=""></script><script src="/assets/js/handlers.js" defer=""></script></body></html>
